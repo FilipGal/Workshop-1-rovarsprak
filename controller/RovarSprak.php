@@ -4,11 +4,10 @@ class RovarSprak {
         if (isset($_POST['text'])) {
             return $this->translateToRovarsprak($_POST['text']);
         } else {
-            return "";
+            return ''; 
         }
     }    
     private function translateToRovarsprak($str) {
-        $strtolower = strtolower($str);
-        return preg_replace("([bcdfghjklmnpqrstvwxz])", '${0}o${0}', $strtolower);
+        return preg_replace("([bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ])", '${0}o${0}', $str);
     }
 }
