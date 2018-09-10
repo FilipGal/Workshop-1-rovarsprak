@@ -1,6 +1,6 @@
 <?php
 class InputView {
-    public function render() {
+    public function render() : string {
         return '
         <form action="index.php" method="post">
         <p>Input text to translate to rovarsprak</p>

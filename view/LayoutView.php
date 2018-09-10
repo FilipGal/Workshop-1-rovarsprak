@@ -1,6 +1,6 @@
 <?php
 class LayoutView {
-    public function render(InputView $iv, OutputView $ov) {
+    public function render(InputView $iv, OutputView $ov) : string {
         echo '<!DOCTYPE html>
         <html>
             <head>

@@ -10,7 +10,7 @@ require_once 'view/OutputView.php';
 
 //CREATE OBJECTS OF THE VIEWS
 $iv = new InputView();
-$lv = new LayoutView();
 $ov = new OutputView();
+$lv = new LayoutView();
 
 $lv->render($iv, $ov);

@@ -7,7 +7,7 @@ class OutputView {
     function __construct() {
         $this->rovarsprak = new RovarSprak();
     }
-    public function render() {
+    public function render() : string {
         return '<div class="output">'.$this->rovarsprak->render().'</div>';
     }
 }
