@@ -8,6 +8,6 @@ class OutputView {
         $this->rovarsprak = new RovarSprak();
     }
     public function render() {
-        return '<div>'.$this->rovarsprak->render().'</div>';
+        return '<div class="output">'.$this->rovarsprak->render().'</div>';
     }
 }
