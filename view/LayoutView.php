@@ -1,6 +1,6 @@
 <?php
 class LayoutView {
-    public function render(InputView $iv) {
+    public function render(InputView $iv, OutputView $ov) {
         echo '<!DOCTYPE html>
         <html>
             <head>
@@ -9,6 +9,7 @@ class LayoutView {
             </head>
             <body>
                 '.$iv->render().'
+                '.$ov->render().'
             </body>
         </html>
         '; 

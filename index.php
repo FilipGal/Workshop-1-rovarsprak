@@ -6,8 +6,11 @@ ini_set('display_errors', 'On');
 //INCLUDE THE FILES NEEDED...
 require_once 'view/LayoutView.php';
 require_once 'view/InputView.php';
+require_once 'view/OutputView.php';
 
 //CREATE OBJECTS OF THE VIEWS
 $iv = new InputView();
 $lv = new LayoutView();
-$lv->render($iv);
+$ov = new OutputView();
+
+$lv->render($iv, $ov);

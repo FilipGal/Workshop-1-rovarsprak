@@ -1,13 +1,13 @@
 <?php
 class InputView {
     public function render() {
-        echo '
-        <form action="/index.php">
+        return '
+        <form action="index.php" method="post">
         <p>Input text to translate to rovarsprak</p>
-        <textarea id="text">
-        
+        <textarea id="text" name="text">
+
         </textarea><br>
-        <button type="button">Translate</button>
+        <button>Translate</button>
         </form>
         ';
     }
